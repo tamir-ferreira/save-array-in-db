@@ -1,4 +1,4 @@
-import { QueryResult } from 'pg';
+import { QueryResult } from "pg";
 
 interface IMovieRequest {
   name: string;
@@ -14,14 +14,14 @@ interface IMovie extends IMovieRequest {
 }
 
 type MovieResult = QueryResult<IMovieRequest>;
-type Movie = Omit<IMovie, 'id'>;
+type Movie = Omit<IMovie, "id">;
 
 type TypesInputCategories =
-  | 'Drama'
-  | 'Suspense'
-  | 'Terror'
-  | 'Comédia'
-  | 'Ação'
-  | 'Aventura';
+  | "Drama"
+  | "Suspense"
+  | "Terror"
+  | "Comédia"
+  | "Ação"
+  | "Aventura";
 
 export { Movie, MovieResult, TypesInputCategories };
